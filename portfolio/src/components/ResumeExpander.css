@@ -1,0 +1,36 @@
+.collaspesContents{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quarterBox{
+  width: 33%;
+}
+.halfBox{
+  width: 66%;
+}
+.resumeTitle{
+  font-weight:bold;
+  font-size: 20px;
+}
+.resumeExpander{
+  padding-top: 20px;
+}
+.workTitle{
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropArrow{
+  margin-left: 5px;
+  font-size: 16px;
+}
+.rotated{
+  transform: rotate(180deg);
+  transition: .1s;
+}
+.counterrotated{
+  transform: rotate(0deg);
+  transition: .1s;
+}

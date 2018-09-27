@@ -1,0 +1,73 @@
+.aboutContainer {
+  background: lightgrey;
+  border: 1rem black solid;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1.5rem;
+  margin-top: 3rem;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.aboutTitle {
+  font-family: "Monoton", cursive;
+  font-size: 42px;
+}
+.infoRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portrait {
+  background-image: url("../img/me.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1rem black solid;
+  border-radius: 1.5rem;
+  width: 33%;
+  max-width: 400px;
+  min-width: 200px;
+  height: 350px;
+  background-size: 400px;
+  margin: 10px;
+}
+
+.contactTitle {
+  font-size: 36px;
+}
+.listItem {
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listItem:hover{
+  font-weight:bold;
+}
+.listIcon {
+  font-size: 36px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.flip {
+  transform: scaleX(-1);
+}
+.contactList{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.resumeSection{
+  margin-top: 2em;
+}
+.workTitle{
+  font-size: 22px;
+}
+.workTitle:hover{
+  font-weight:bold;
+}
+.eduListitem{
+  padding:1rem;
+}

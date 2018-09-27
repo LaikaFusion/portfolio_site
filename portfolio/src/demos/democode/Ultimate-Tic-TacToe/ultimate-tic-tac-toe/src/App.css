@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+
+.UTTTbackground {
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #283236;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gameCell {
+  background-color: #3c7679;
+  display: grid;
+  grid-template-columns: 4rem 4rem 4rem;
+  grid-template-rows: 4rem 4rem 4rem;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  cursor: default;
+}
+.subGameCell {
+  background: black;
+  color: white;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 2rem;
+}
+.gameGrid {
+  display: grid;
+
+  grid-template-columns: 14rem 14rem 14rem;
+  grid-template-rows: 14rem 14rem 14rem;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+
+  margin: 10px;
+}
+.cellCover {
+  position: absolute;
+  box-sizing: border-box;
+  width: 14rem;
+  height: 14rem;
+  z-index: 3;
+  background-color: white;
+  color: black;
+  display: none;
+}
+.displaySomething {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14rem;
+  cursor: default;
+}
+.active {
+  background-color: #75a982;
+}
+.inactive {
+  pointer-events: none;
+}
+
+.UTTTtitle {
+  font-family: "Audiowide", cursive;
+  background-color: black;
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+}
+.titleBorder {
+  margin-top: 1rem;
+  padding: 20px;
+  border: 0.5rem #75a982 solid;
+}
+
+.buttonRow {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 0.9rem;
+}
+.smallButton {
+  background-color: black;
+  color: white;
+  border: 0.5rem #75a982 solid;
+  font-size: 30px;
+  padding: 10px;
+}
+.game {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.closeButtonRow {
+  display: flex;
+}
+.closeButton {
+  font-size: 20px;
+}
+
+.instructions {
+  color: white;
+  font-size: 20px;
+}
+
+.Modal {
+  background: rgba(0, 0, 0, 1);
+  border: 0.5rem #75a982 solid;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  font-family: sans-serif;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+}
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.ReactModal__Overlay {
+  /*fix for modal z-index*/
+  z-index: 1000;
+}
+
+/* a {
+  color: white;
+} */
+
+.creditsLine {
+  color: white;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.name {
+  font-weight: bold;
+}
