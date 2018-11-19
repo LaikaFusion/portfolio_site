@@ -14,13 +14,49 @@
   z-index: 5;
 }
 .menuButton {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   padding: 10px;
   font-size: 34px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .menuButton:hover {
   font-weight: bold;
 }
 .selected {
   font-weight: bold;
+}
+.openarrow{
+  display: none;
+ 
+}
+.menuArrow{
+  font-size:30px;
+}
+.toplist{
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .menubarContainer {
+  flex-direction: column;
+  max-width: 85%;
+  }
+  .openarrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .toplist{
+  flex-direction: column
+  }
+  .menuButton{
+    padding-bottom: 10px;
+
+  }
 }

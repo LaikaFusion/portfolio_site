@@ -1,4 +1,3 @@
-
 .menuContainer {
   width: 25%;
   max-width: 8em;
@@ -8,7 +7,7 @@
   transform: skewX(20deg);
   border-radius: 1.5em;
   border: 2rem black solid;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .menuItem {
@@ -41,11 +40,44 @@
   margin-left: 56px;
 }
 
-.title{
+.title {
   transform: skewX(-20deg);
-  font-family: 'Monoton', cursive;
-  padding-bottom: .75em;
-  margin-top: -.8em;
-  font-size:42px;
+  font-family: "Monoton", cursive;
+  padding-bottom: 0.75em;
+  margin-top: -0.8em;
+  font-size: 42px;
 }
 
+@media (max-width: 1000px) {
+  .title {
+    transform: skewX(0deg);
+    font-size: 36px;
+  }
+  .menuContainer {
+    transform: skewX(0deg);
+  }
+  .menuItem {
+    transform: skewX(0deg);
+  }
+}
+
+@media (max-width: 700px) {
+  .title {
+    font-size: 28px;
+  }
+  .menuContainer {
+    transform: skewX(0deg);
+    padding: 1em;
+    width: 50%;
+  }
+  .menuItem {
+    transform: skewX(0deg);
+    padding: 1rem 0;
+  }
+  .rightLine {
+    margin-left: -56px;
+  }
+  .leftLine {
+    margin-right: -56px;
+  }
+}

@@ -6,7 +6,7 @@
   margin-right: auto;
   border-radius: 1.5rem;
   margin-top: 3rem;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 .aboutTitle {
   font-family: "Monoton", cursive;
@@ -41,8 +41,8 @@
   justify-content: center;
   align-items: center;
 }
-.listItem:hover{
-  font-weight:bold;
+.listItem:hover {
+  font-weight: bold;
 }
 .listIcon {
   font-size: 36px;
@@ -52,22 +52,38 @@
 .flip {
   transform: scaleX(-1);
 }
-.contactList{
+.contactList {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
 
-.resumeSection{
+.resumeSection {
   margin-top: 2em;
 }
-.workTitle{
+.workTitle {
   font-size: 22px;
 }
-.workTitle:hover{
-  font-weight:bold;
+.workTitle:hover {
+  font-weight: bold;
 }
-.eduListitem{
-  padding:1rem;
+.eduListitem {
+  padding: 1rem;
+}
+
+@media (max-width: 700px) {
+  .infoRow {
+    flex-direction: column;
+  }
+  .portrait{
+    width:75%;
+  }
+  .listItem {
+    font-size:16px;
+  }
+  .aboutContainer {
+    max-width:85%;
+    margin-top: 1rem;
+  }
 }
