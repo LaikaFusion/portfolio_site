@@ -78,7 +78,7 @@ class MenuBar extends Component {
                 Demos
               </div>
             </NavLink>
-            <NavLink to="/blog">
+            {/* <NavLink to="/blog">
               <div
                 className={
                   this.props.location.pathname === "/demos"
@@ -88,7 +88,7 @@ class MenuBar extends Component {
               >
                 Blog
               </div>
-            </NavLink>
+            </NavLink> */}
           </div>
         ) : null}
         <div
