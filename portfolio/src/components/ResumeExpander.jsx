@@ -33,9 +33,9 @@ class ResumeExpander extends Component {
             <div className="duties">
             <div className="resumeTitle">
             Duties:</div>
-              <div>
+              <div >
                 {this.props.duties.map((e, i) => {
-                  return <div key={i}>{e}</div>;
+                  return <div className="resumeDuty" key={i}>{e}</div>;
                 })}
               </div>
             </div>

@@ -13,8 +13,6 @@ import {
   faInstagram
 } from "@fortawesome/free-brands-svg-icons";
 import ResumeExpander from "./ResumeExpander";
-import secret from '../secrets.js';
-
 class About extends Component {
   constructor(props) {
     super(props);
@@ -23,9 +21,10 @@ class About extends Component {
     };
   }
   componentDidMount = ()=>{
-    this.setState({resume: secret.resume})
+    this.setState({resume: JSON.parse(process.env.REACT_APP_RESUME)})
   }
   render() {
+    const education = JSON.parse(process.env.REACT_APP_EDUCATION);
     return (
       <div>
         <MenuBar />
@@ -40,46 +39,46 @@ class About extends Component {
                   <div className="listIcon">
                     <FontAwesomeIcon icon={faEnvelope} />
                   </div>
-                  <a href={`mailto:${secret.contactInfo.email1}`}>
-                    {secret.contactInfo.email1}
+                  <a href={`mailto:${process.env.REACT_APP_EMAIL1}`}>
+                    {process.env.REACT_APP_EMAIL1}
                   </a>
                 </div>
                 <div className="listItem">
                   <div className="listIcon">
                     <FontAwesomeIcon icon={faEnvelope} />
                   </div>
-                  <a  href={`mailto:${secret.contactInfo.email2}`}>
-                    {secret.contactInfo.email2}
+                  <a  href={`mailto:${process.env.REACT_APP_EMAIL2}`}>
+                    {process.env.REACT_APP_EMAIL2}
                   </a>
                 </div>
                 <div className="listItem">
                   <div className="listIcon flip ">
                     <FontAwesomeIcon icon={faPhone} />
                   </div>
-                  {secret.contactInfo.phone}
+                  {process.env.REACT_APP_PHONE}
                 </div>
                 <div className="listItem">
                   <div className="listIcon">
                     <FontAwesomeIcon icon={faGithubAlt} />
                   </div>
-                  <a href={`https://${secret.contactInfo.github}`}>
-                    {secret.contactInfo.github}
+                  <a href={`https://${process.env.REACT_APP_GITHUB}`}>
+                    {process.env.REACT_APP_GITHUB}
                   </a>
                 </div>
                 <div className="listItem">
                   <div className="listIcon">
                     <FontAwesomeIcon icon={faLinkedinIn} />
                   </div>
-                  <a href={`https://www.${secret.contactInfo.linkedin}`}>
-                  {secret.contactInfo.linkedin}
+                  <a href={`https://www.${process.env.REACT_APP_LINKEDIN}`}>
+                  {process.env.REACT_APP_LINKEDIN}
                   </a>
                 </div>
                 <div className="listItem">
                   <div className="listIcon">
                     <FontAwesomeIcon icon={faInstagram} />
                   </div>
-                  <a href={`https://www.${secret.contactInfo.insta}`}>
-                  {secret.contactInfo.insta}
+                  <a href={`https://www.${process.env.REACT_APP_INSTA}`}>
+                  {process.env.REACT_APP_INSTA}
                   </a>
                 </div>
                 <div className="listItem">
@@ -108,17 +107,17 @@ class About extends Component {
           <div className="educationRow">
             <div className="contactTitle">Education</div>
             <div className="eduListitem">
-              <div className="listItem">{secret.education[0].schoolName}</div>
-              <div className="degree">{secret.education[0].major}</div>
-              <div className="edudate">{secret.education[0].dates}</div>
+              <div className="listItem">{education[0].schoolName}</div>
+              <div className="degree">{education[0].major}</div>
+              <div className="edudate">{education[0].dates}</div>
             </div>
             <div className="eduListitem">
-              <div className="listItem">{secret.education[1].schoolName}</div>
+              <div className="listItem">{education[1].schoolName}</div>
               <div className="degree">
-              {secret.education[1].major} <br />
-              {secret.education[1].minor}
+              {education[1].major} <br />
+              {education[1].minor}
               </div>
-              <div className="edudate">{secret.education[1].dates}</div>
+              <div className="edudate">{education[1].dates}</div>
             </div>
           </div>
         </div>

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./Mainmenu.css";
-import secret from '../secrets.js';
 
 class Mainmenu extends Component {
   render() {
@@ -10,16 +9,16 @@ class Mainmenu extends Component {
       <div className="fullContainer">
         <div className="leftLine" />
         <div className="menuContainer">
-          <div className="title">{secret.name}</div>
+          <div className="title">{process.env.REACT_APP_REALNAME}</div>
           <Link to="/about">
             <div className="about menuItem">About</div>
           </Link>
           <Link to="/demos">
             <div className="demos menuItem">Demos</div>
           </Link>
-          <Link to="/blog">
+          {/* <Link to="/blog">
             <div className="blog menuItem">Blog</div>
-          </Link>
+          </Link> */}
         </div>
         <div className="rightLine" />
       </div>
