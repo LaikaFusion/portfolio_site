@@ -10,34 +10,44 @@ class index extends Component {
     this.state = {
       demos: [
         {
-          name: "Snakes on a React",
+          name: "Text Constructor [React, Semantic-UI]",
+          link: "https://textconstructor.y42.xyz/",
+          external: true
+        },
+        {
+          name: "Game of Life [React, Canvas]",
+          link: "https://gameoflife.y42.xyz/",
+          external: true
+        },
+        {
+          name: "2048 Symbol Typing Trainer [Vue.js]",
+          link: "http://2048.y42.xyz/",
+          external: true
+        },
+        {
+          name: "What is the Color of the Sky [React,Express]",
+          link: "https://whatisthecolorofthesky.netlify.com/",
+          external: true
+        },
+        {
+          name: "Snakes on a React [React]",
           link: "/snakes",
           external: false
         },
         {
-          name: "Ultimate Tic Tac Toe",
+          name: "Ultimate Tic Tac Toe [React]",
           link: "/UTTT",
           external: false
         },
         {
-          name: "Sputnik Snippets -- VSCode snippets",
-          link: "https://github.com/LaikaFusion/Sputnik-Snippets",
-          external: true
-        },
-        {
-          name: "Debug Chopper -- VSCode Extension",
+          name: "Debug Chopper [VSCode Extension]",
           link:
             "https://marketplace.visualstudio.com/items?itemName=laikaf.debugchopper",
           external: true
         },
         {
-          name: "License Plate Game",
+          name: "License Plate Game [CSS,JS,HTML]",
           link: "https://laikafusion.github.io/License-Plate-Game/",
-          external: true
-        },
-        {
-          name: "Zalgo Constructor",
-          link: "https://laikafusion.github.io/ZalgoConstructor/",
           external: true
         }
       ],
@@ -71,8 +81,11 @@ class index extends Component {
         });
         break;
       default:
-      if(/^\w$/.test(e.key)){
+      if (/^[ -~]$/.test(e.key)) {
         this.setState(prevState => {
+          if (e.code === "Space") {
+            return { demosInput: prevState.demosInput.concat("\xa0") };
+          }
           return { demosInput: prevState.demosInput.concat(e.key) };
         });
       }
