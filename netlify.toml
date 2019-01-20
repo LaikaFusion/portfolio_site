@@ -6,8 +6,8 @@
 #    that is where we will look for package.json/.nvmrc/etc not repo root!
 
 [build]
-  base    = "./src"
-  publish = "./src/build"
+  base    = "./portfolio"
+  publish = "./portfolio/build"
   command = "yarn build"
 
 [[redirects]]
