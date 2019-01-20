@@ -29,6 +29,7 @@
   justify-content: left;
   align-items: center;
   flex-direction: column;
+  line-height: 1.5em;
 }
 .demoItem {
   width: 100%;

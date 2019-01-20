@@ -1,6 +1,7 @@
 .menuContainer {
-  width: 25%;
+  width: 40%;
   max-width: 8em;
+  min-width: 3em;
   background: lightgrey;
   font-size: 36px;
   padding: 2em;
@@ -52,6 +53,7 @@
   .title {
     transform: skewX(0deg);
     font-size: 36px;
+    width: 100%;
   }
   .menuContainer {
     transform: skewX(0deg);
@@ -59,9 +61,15 @@
   .menuItem {
     transform: skewX(0deg);
   }
+  .rightLine {
+    margin-left: -56px;
+  }
+  .leftLine {
+    margin-right: -56px;
+  }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .title {
     font-size: 28px;
   }
@@ -74,10 +82,5 @@
     transform: skewX(0deg);
     padding: 1rem 0;
   }
-  .rightLine {
-    margin-left: -56px;
-  }
-  .leftLine {
-    margin-right: -56px;
-  }
+ 
 }

@@ -5,17 +5,23 @@
   border-right: 1rem yellowgreen double ;
   border-radius: 0;
   box-shadow: 0px 0px 5px yellowgreen;
-
 }
 .menuButtonCRT {
  color: yellowgreen;
  text-shadow: 0px 0px 5px yellowgreen;
  font-family: 'Press Start 2P', monospace;
-  padding-top: 10px;
-  
+  font-size: 34px !important;
+  padding-top: 20px;
 }
 .crtselect{
   background:yellowgreen;
   color:rgb(26, 40, 26) !important;
   box-shadow: 0px 0px 5px yellowgreen;
+  height: 100%;
+}
+
+@media (max-width: 870px) {
+  .menuButtonCRT {
+    font-size: 27px;
+  }
 }
