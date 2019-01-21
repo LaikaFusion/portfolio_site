@@ -47,6 +47,7 @@
   padding-bottom: 0.75em;
   margin-top: -0.8em;
   font-size: 42px;
+
 }
 
 @media (max-width: 1000px) {
@@ -54,6 +55,9 @@
     transform: skewX(0deg);
     font-size: 36px;
     width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
   }
   .menuContainer {
     transform: skewX(0deg);
@@ -80,7 +84,7 @@
   }
   .menuItem {
     transform: skewX(0deg);
-    padding: 1rem 0;
+    padding: .5rem 0;
   }
  
 }
