@@ -91,7 +91,7 @@ class MenuBar extends Component {
             </NavLink> */}
           </div>
         ) : null}
-        <div
+        <div className="menuArrowContainer"><div
           onClick={this.toggleOpen}
           className={
             this.props.location.pathname === "/demos"
@@ -109,7 +109,8 @@ class MenuBar extends Component {
           >
             ▼
           </span>
-        </div>
+        </div></div>
+        
       </div>
     );
   }
