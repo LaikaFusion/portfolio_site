@@ -26,7 +26,7 @@ class index extends Component {
         },
         {
           name: "What is the Color of the Sky [React,Express]",
-          link: "https://whatisthecolorofthesky.netlify.com/",
+          link: "http://whatisthecolorofthesky.y42.xyz/",
           external: true
         },
         {
