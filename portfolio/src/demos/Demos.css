@@ -4,7 +4,6 @@
   background-color: rgb(26, 36, 26);
   width: 100%;
   height: 100vh;
-  height: 100%;
   margin: 0;
 }
 
@@ -91,4 +90,7 @@
     margin-top: 1rem;
     margin-bottom: 3rem;
   }
+  .demosBackground {
+  height: 100%;
+}
 }
