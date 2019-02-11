@@ -10,6 +10,11 @@ class index extends Component {
     this.state = {
       demos: [
         {
+          name: "Stock Trainer [React, Semantic-UI, Django, PostgreSQL]",
+          link: "https://stock-trainer.netlify.com/",
+          external: true
+        },
+        {
           name: "Text Constructor [React, Semantic-UI]",
           link: "https://textconstructor.y42.xyz/",
           external: true
@@ -25,7 +30,7 @@ class index extends Component {
           external: true
         },
         {
-          name: "What is the Color of the Sky [React,Express]",
+          name: "What is the Color of the Sky [React, Express, PostgreSQL]",
           link: "http://whatisthecolorofthesky.y42.xyz/",
           external: true
         },
