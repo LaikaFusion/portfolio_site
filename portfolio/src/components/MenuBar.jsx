@@ -38,7 +38,7 @@ class MenuBar extends Component {
     return (
       <div
         className={
-          this.props.location.pathname === "/demos"
+          this.props.location.pathname === "/demos/"
             ? "menubarContainer menubarContainerCRT"
             : "menubarContainer"
         }
@@ -48,7 +48,7 @@ class MenuBar extends Component {
             <NavLink activeClassName="selected" exact to="/">
               <div
                 className={
-                  this.props.location.pathname === "/demos"
+                  this.props.location.pathname === "/demos/"
                     ? "menuButton menuButtonCRT"
                     : "menuButton"
                 }
@@ -56,10 +56,10 @@ class MenuBar extends Component {
                 Home
               </div>
             </NavLink>
-            <NavLink activeClassName="selected" to="/about">
+            <NavLink activeClassName="selected" to="/about/">
               <div
                 className={
-                  this.props.location.pathname === "/demos"
+                  this.props.location.pathname === "/demos/"
                     ? "menuButton menuButtonCRT"
                     : "menuButton"
                 }
@@ -67,10 +67,10 @@ class MenuBar extends Component {
                 About
               </div>
             </NavLink>
-            <NavLink activeClassName="" to="/demos">
+            <NavLink activeClassName="" to="/demos/">
               <div
                 className={
-                  this.props.location.pathname === "/demos"
+                  this.props.location.pathname === "/demos/"
                     ? "menuButton menuButtonCRT crtselect"
                     : "menuButton"
                 }
@@ -78,17 +78,17 @@ class MenuBar extends Component {
                 Demos
               </div>
             </NavLink>
-            {/* <NavLink to="/blog">
+            <NavLink  activeClassName="selected" to="/blog/">
               <div
                 className={
-                  this.props.location.pathname === "/demos"
+                  this.props.location.pathname === "/demos/"
                     ? "menuButton menuButtonCRT"
                     : "menuButton"
                 }
               >
                 Blog
               </div>
-            </NavLink> */}
+            </NavLink>
           </div>
         ) : null}
         <div className="menuArrowContainer"><div

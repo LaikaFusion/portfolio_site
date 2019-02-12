@@ -7,6 +7,7 @@ import About from "./components/About";
 import Demos from "./demos/Demos";
 import Snake from "./demos/democode/Snakes-OnA-React/snake/src/Snake";
 import UTTT from "./demos/democode/Ultimate-Tic-TacToe/ultimate-tic-tac-toe/src/UTTT";
+import Blog from "./components/Blog/Blog";
 
 //css
 import "./App.css";
@@ -17,6 +18,7 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Switch>
+            <Route exact path="/blog" component={Blog} />
             <Route exact path="/UTTT" component={UTTT} />
             <Route exact path="/snakes" component={Snake} />
             <Route exact path="/demos" component={Demos} />
