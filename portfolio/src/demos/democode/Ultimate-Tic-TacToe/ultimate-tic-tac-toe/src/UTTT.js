@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import GameCell from "./components/GameCell";
 import Modal from "react-modal";
+import { Helmet } from "react-helmet";
 
 Modal.setAppElement("#root");
 
@@ -107,6 +108,11 @@ class UTTT extends Component {
   render() {
     return (
       <div className="UTTTbackground">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>UTTT - Andrew McLaughlin</title>
+          <link rel="canonical" href={`${process.env.URL}UTTT`} />
+        </Helmet>
         <Modal
           onRequestClose={() => {
             this.toggleOverlay("Instructions");
