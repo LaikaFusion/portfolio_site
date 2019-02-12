@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Screen from "./components/Screen";
+import { Helmet } from "react-helmet";
 
 const xline = 12;
 const yline = 21;
@@ -285,11 +286,15 @@ class Snake extends Component {
   render() {
     return (
       <div className="background">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Snacks on a React - Andrew McLaughlin</title>
+          <link rel="canonical" href={`${process.env.URL}snakes`} />
+        </Helmet>
         <div className="snakeGame">
           <div className="screenContainer">
             <Screen pixels={this.state.pixels} />
             <div className="score">
-              {" "}
               Score: {(this.state.snake.length - 4)}
             </div>
             <div className="buttonContainer">

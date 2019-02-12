@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+
 import "./Demos.css";
 import "./CRTeffect.css";
 import MenuBar from "../components/MenuBar";
@@ -103,6 +105,11 @@ class index extends Component {
   render() {
     return (
       <div className="crt demosBackground">
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Demos - Andrew McLaughlin</title>
+          <link rel="canonical" href={`${process.env.URL}demos`} />
+        </Helmet>
         <MenuBar />
         <div className="demoContainer">
           <div className="demoSelectTitle">Select A Program</div>

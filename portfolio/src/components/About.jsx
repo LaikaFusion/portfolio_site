@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import MenuBar from "./MenuBar";
 import "./About.css";
+import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
@@ -17,16 +18,21 @@ class About extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      resume:[]
+      resume: []
     };
   }
-  componentDidMount = ()=>{
-    this.setState({resume: JSON.parse(process.env.REACT_APP_RESUME)})
-  }
+  componentDidMount = () => {
+    this.setState({ resume: JSON.parse(process.env.REACT_APP_RESUME) });
+  };
   render() {
     const education = JSON.parse(process.env.REACT_APP_EDUCATION);
     return (
       <div>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>About - Andrew McLaughlin</title>
+          <link rel="canonical" href={`${process.env.URL}about`} />
+        </Helmet>
         <MenuBar />
         <div className="aboutContainer">
           <div className="aboutTitle">About Me</div>
@@ -47,7 +53,7 @@ class About extends Component {
                   <div className="listIcon">
                     <FontAwesomeIcon icon={faEnvelope} />
                   </div>
-                  <a  href={`mailto:${process.env.REACT_APP_EMAIL2}`}>
+                  <a href={`mailto:${process.env.REACT_APP_EMAIL2}`}>
                     {process.env.REACT_APP_EMAIL2}
                   </a>
                 </div>
@@ -70,7 +76,7 @@ class About extends Component {
                     <FontAwesomeIcon icon={faLinkedinIn} />
                   </div>
                   <a href={`https://www.${process.env.REACT_APP_LINKEDIN}`}>
-                  {process.env.REACT_APP_LINKEDIN}
+                    {process.env.REACT_APP_LINKEDIN}
                   </a>
                 </div>
                 <div className="listItem">
@@ -78,7 +84,7 @@ class About extends Component {
                     <FontAwesomeIcon icon={faInstagram} />
                   </div>
                   <a href={`https://www.${process.env.REACT_APP_INSTA}`}>
-                  {process.env.REACT_APP_INSTA}
+                    {process.env.REACT_APP_INSTA}
                   </a>
                 </div>
                 <div className="listItem">
@@ -114,8 +120,8 @@ class About extends Component {
             <div className="eduListitem">
               <div className="listItem">{education[1].schoolName}</div>
               <div className="degree">
-              {education[1].major} <br />
-              {education[1].minor}
+                {education[1].major} <br />
+                {education[1].minor}
               </div>
               <div className="edudate">{education[1].dates}</div>
             </div>
