@@ -16,9 +16,9 @@ class Mainmenu extends Component {
           <Link to="/demos">
             <div className="demos menuItem">Demos</div>
           </Link>
-          {/* <Link to="/blog">
+          <a href="https://blog.andrewmclaughl.in">
             <div className="blog menuItem">Blog</div>
-          </Link> */}
+          </a>
         </div>
         <div className="rightLine" />
       </div>
