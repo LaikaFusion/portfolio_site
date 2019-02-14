@@ -15,25 +15,23 @@ class MenuBar extends Component {
       open: !prevState.open
     }));
   };
-    componentDidMount() {
-      this.updateWindowDimensions();
-      window.addEventListener('resize', this.updateWindowDimensions);
-    };
-    
-    componentWillUnmount() {
-      window.removeEventListener('resize', this.updateWindowDimensions);
-    };
-    
-    updateWindowDimensions= ()=>  {
-      if(window.innerWidth < 700){
-        this.setState({ open: false });
-      }
-      else{
-        this.setState({open:true});
-      }
-      
-    };
-  
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener("resize", this.updateWindowDimensions);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions = () => {
+    if (window.innerWidth < 700) {
+      this.setState({ open: false });
+    } else {
+      this.setState({ open: true });
+    }
+  };
+
   render() {
     return (
       <div
@@ -78,7 +76,7 @@ class MenuBar extends Component {
                 Demos
               </div>
             </NavLink>
-            {/* <NavLink to="/blog">
+            <NavLink to="/blog">
               <div
                 className={
                   this.props.location.pathname === "/demos"
@@ -88,29 +86,30 @@ class MenuBar extends Component {
               >
                 Blog
               </div>
-            </NavLink> */}
+            </NavLink>
           </div>
         ) : null}
-        <div className="menuArrowContainer"><div
-          onClick={this.toggleOpen}
-          className={
-            this.props.location.pathname === "/demos"
-              ? "menuButton menuButtonCRT openarrow"
-              : "menuButton openarrow"
-          }
-        >
-          Menu
-          <span
+        <div className="menuArrowContainer">
+          <div
+            onClick={this.toggleOpen}
             className={
-              this.state.open
-                ? "menuArrow rotated openarrow"
-                : " counterrotated menuArrow openarrow"
+              this.props.location.pathname === "/demos"
+                ? "menuButton menuButtonCRT openarrow"
+                : "menuButton openarrow"
             }
           >
-            ▼
-          </span>
-        </div></div>
-        
+            Menu
+            <span
+              className={
+                this.state.open
+                  ? "menuArrow rotated openarrow"
+                  : " counterrotated menuArrow openarrow"
+              }
+            >
+              ▼
+            </span>
+          </div>
+        </div>
       </div>
     );
   }
