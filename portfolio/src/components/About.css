@@ -2,10 +2,8 @@
   background: lightgrey;
   border: 1rem black solid;
   max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
   border-radius: 1.5rem;
-  margin-top: 1.2em;
+  margin: 1.2em auto;
   font-family: "Source Sans Pro", sans-serif;
 }
 .aboutTitle {

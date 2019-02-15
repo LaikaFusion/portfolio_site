@@ -13,6 +13,13 @@
 }
 
 html {
+  overflow: hidden;
+  background-image: url(./img/background);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; 
+  /* background-attachment: fixed; */
+  background-color: #386C0B;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -24,8 +31,11 @@ html {
 }
 
 body {
+  overflow: hidden;
+
   padding: 0;
   min-height: 100%;
+  height: 100vh;
   margin: 0;
   box-sizing: border-box;
 }
@@ -33,5 +43,9 @@ body {
 @media only screen and (max-device-width: 767px){
   #root {
     height: inherit;
+  }
+  html{
+    height: 115%;
+
   }
 }

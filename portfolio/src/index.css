@@ -2,12 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url(./img/background);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; 
-  background-attachment: fixed;
-  background-color: #386C0B;
+  
 
 }
 a{
