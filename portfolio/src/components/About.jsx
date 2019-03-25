@@ -11,7 +11,7 @@ import {
 import {
   faGithubAlt,
   faLinkedinIn,
-  faInstagram
+  faMedium
 } from "@fortawesome/free-brands-svg-icons";
 import ResumeExpander from "./ResumeExpander";
 class About extends Component {
@@ -81,7 +81,7 @@ class About extends Component {
                 </div>
                 <div className="listItem">
                   <div className="listIcon">
-                    <FontAwesomeIcon icon={faInstagram} />
+                    <FontAwesomeIcon icon={faMedium} />
                   </div>
                   <a href={`https://www.${process.env.REACT_APP_INSTA}`}>
                     {process.env.REACT_APP_INSTA}
