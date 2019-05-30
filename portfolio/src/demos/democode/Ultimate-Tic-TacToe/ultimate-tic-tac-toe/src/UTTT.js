@@ -241,17 +241,18 @@ class UTTT extends Component {
             >
               How to Play!
             </button>
+            <div className="smallButton">Turn: {this.state.currentTurn}</div>
             <button
               className="smallButton"
               onClick={() => {
                 this.toggleOverlay("Credits");
               }}
             >
-              Credits{" "}
+              Credits
             </button>
           </div>
           <div className="gameGrid">{this.gameGridMaker()}</div>
-          <div className="smallButton">Turn: {this.state.currentTurn}</div>
+          
         </div>
       </div>
     );

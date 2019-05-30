@@ -25,6 +25,7 @@
   height: 100%;
   width: 100%;
   cursor: default;
+  position: relative;
 }
 .subGameCell {
   background: black;
@@ -38,12 +39,10 @@
 }
 .gameGrid {
   display: grid;
-
   grid-template-columns: 14rem 14rem 14rem;
   grid-template-rows: 14rem 14rem 14rem;
   grid-column-gap: 1.5rem;
   grid-row-gap: 1.5rem;
-
   margin: 10px;
 }
 .cellCover {
@@ -86,8 +85,8 @@
 .buttonRow {
   display: flex;
   width: 100%;
-  justify-content: space-around;
-  margin: 0.9rem;
+  justify-content: space-between;
+  margin: 0.3rem;
 }
 .smallButton {
   background-color: black;
@@ -95,6 +94,8 @@
   border: 0.5rem #75a982 solid;
   font-size: 30px;
   padding: 10px;
+  font-family: "Audiowide", cursive;
+
 }
 .game {
   display: flex;
