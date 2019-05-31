@@ -76,7 +76,7 @@ class MenuBar extends Component {
                 Demos
               </div>
             </NavLink>
-            <a href="https://blog.andrewmclaughl.in">
+            <a href="https://medium.com/@Andrew_Mc">
               <div
                 className={
                   this.props.location.pathname === "/demos"
